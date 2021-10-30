@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Michael Fisher, a digital designer and developer who creates valuable experiences through meaningful interactions that bridge the physical and the digital.">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Projects &ndash; fisher.studio</title>
+        <link href="../styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div id="nav-wrapper">
+                <a href="..">
+                    <h1 aria-label="Fisher Studio">fisher.<span class="text-orange">studio</span>()</h1>
+                </a>
+
+                <ul>
+                    <li><a href="">projects</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+
+                <div class="clear-float"></div>
+            </div> <!-- #nav-wrapper -->
+        </nav>
+
+        <main>
+            <div id="wrapper" class="wider">
+                <div id="filter-tags">
+                    <button name="Design research" class="tag tag-pink" onclick="setFilter(this)">Design research</button>
+                    <button name="Interaction design" class="tag tag-pink" onclick="setFilter(this)">Interaction design</button>
+                    <button name="Medium exploration" class="tag tag-pink" onclick="setFilter(this)">Medium exploration</button>
+                    <button name="Motion design" class="tag tag-pink" onclick="setFilter(this)">Motion design</button>
+                    <button name="UI design" class="tag tag-pink" onclick="setFilter(this)">UI design</button>
+
+                    <button name="JavaScript" class="tag tag-blue" onclick="setFilter(this)">JavaScript</button>
+                    <button name="p5.js" class="tag tag-blue" onclick="setFilter(this)">p5.js</button>
+                    <button name="Python" class="tag tag-blue" onclick="setFilter(this)">Python</button>
+                    <button name="tk" class="tag tag-blue" onclick="setFilter(this)">tk</button>
+
+                    <button name="Bringing in the real world" class="tag tag-green" onclick="setFilter(this)">Bringing in the real world</button>
+                    <button name="Integrating diverse knowledges" class="tag tag-green" onclick="setFilter(this)">Integrating diverse knowledges</button>
+                    <button name="Reflexivity" class="tag tag-green" onclick="setFilter(this)">Reflexivity</button>
+
+                    <button name="Clear filter" class="tag tag-grey" onclick="clearFilter()">Clear filter</button>
+                </div>
+
+                <div class="float-clear"></div>
+
+                <div id="filtered-projects">
+                    <div class="filtered-project">
+                        <p class="invisible-tag" aria-hidden="true">Interaction design</p>
+                        <p class="invisible-tag" aria-hidden="true">Medium exploration</p>
+                        <p class="invisible-tag" aria-hidden="true">JavaScript</p>
+                        <p class="invisible-tag" aria-hidden="true">p5.js</p>
+                        <p class="invisible-tag" aria-hidden="true">Bringing in the real world</p>
+
+                        <a href="ideas-worth-vending.html">
+                            <img src="../images/project-placeholder.jpg" alt="Ideas Worth Vending project screenshot">
+
+                            <h3>Ideas Worth Vending</h3>
+
+                            <p>An interactive online vending machine filled with art, sharing ideas that aim to make the world a bit better.</p>
+                        </a>
+                    </div> <!-- .filtered-project Ideas Worth Vending -->
+
+                    <div class="filtered-project">
+                        <p class="invisible-tag" aria-hidden="true">Design research</p>
+                        <p class="invisible-tag" aria-hidden="true">Motion design</p>
+                        <p class="invisible-tag" aria-hidden="true">Integrating diverse knowledges</p>
+                        <p class="invisible-tag" aria-hidden="true">Reflexivity</p>
+
+                        <a href="a-tale-of-two-worlds.html">
+                            <img src="../images/project-placeholder.jpg" alt="A Tale of Two Worlds project screenshot">
+
+                            <h3>A Tale of Two Worlds</h3>
+
+                            <p>An exploration and re-presenting of my local area, informed by Indigenous design methodologies.</p>
+                        </a>
+                    </div> <!-- .filtered-project A Tale of Two Worlds -->
+
+                    <div class="filtered-project">
+                        <p class="invisible-tag" aria-hidden="true">UI design</p>
+                        <p class="invisible-tag" aria-hidden="true">Python</p>
+                        <p class="invisible-tag" aria-hidden="true">tk</p>
+
+                        <a href="paintjob-packer.html">
+                            <img src="../images/project-placeholder.jpg" alt="Paintjob Packer project screenshot">
+
+                            <h3>Paintjob Packer</h3>
+
+                            <p>An interactive online vending machine filled with art.</p>
+                        </a>
+                    </div> <!-- .filtered-project Paintjob Packer -->
+
+                    <div class="filtered-project">
+                        <p class="invisible-tag" aria-hidden="true">Design research</p>
+                        <p class="invisible-tag" aria-hidden="true">Bringing in the real world</p>
+                        <p class="invisible-tag" aria-hidden="true">JavaScript</p>
+
+                        <a href="">
+                            <img src="../images/example-placeholder.jpg" alt="Example One project screenshot">
+
+                            <h3>Example One</h3>
+
+                            <p>This project has not been added yet, and is only here to demonstrate the tag filtering function.</p>
+                        </a>
+                    </div> <!-- .filtered-project Example One -->
+
+                    <div class="filtered-project">
+                        <p class="invisible-tag" aria-hidden="true">Reflexivity</p>
+                        <p class="invisible-tag" aria-hidden="true">Bringing in the real world</p>
+                        <p class="invisible-tag" aria-hidden="true">Motion design</p>
+                        <p class="invisible-tag" aria-hidden="true">Medium exploration</p>
+
+                        <a href="">
+                            <img src="../images/example-placeholder.jpg" alt="Example Two project screenshot">
+
+                            <h3>Example Two</h3>
+
+                            <p>This project has not been added yet, and is only here to demonstrate the tag filtering function.</p>
+                        </a>
+                    </div> <!-- .filtered-project Example Two -->
+
+                    <div class="filtered-project">
+                        <p class="invisible-tag" aria-hidden="true">Integrating diverse knowledges</p>
+                        <p class="invisible-tag" aria-hidden="true">Interaction design</p>
+                        <p class="invisible-tag" aria-hidden="true">UI design</p>
+                        <p class="invisible-tag" aria-hidden="true">Python</p>
+                        <p class="invisible-tag" aria-hidden="true">p5.js</p>
+
+                        <a href="">
+                            <img src="../images/example-placeholder.jpg" alt="Example Three project screenshot">
+
+                            <h3>Example Three</h3>
+
+                            <p>This project has not been added yet, and is only here to demonstrate the tag filtering function.</p>
+                        </a>
+                    </div> <!-- .filtered-project Example Three -->
+                </div> <!-- #filtered-projects -->
+
+                <script src="../scripts/project-filter.js"></script>
+
+                <div class="float-clear"></div>
+            </div> <!-- #wrapper -->
+        </main>
+
+        <footer>
+            <ul>
+                <li>Made in Sydney, Australia on Darramurragal Land</li>
+                <li class="divider" aria-hidden="true">|</li>
+                <li>Source code on <a href="https://github.com/Carsmaniac/fisher-studio" target="_blank">GitHub</a></li>
+                <li class="divider" aria-hidden="true">|</li>
+                <li title="Each of you should use whatever gift you have received to serve others, as faithful stewards of God’s grace in its various forms.">1 Peter 4:10</li>
+            </ul>
+        </footer>
+    </body>
+</html>
