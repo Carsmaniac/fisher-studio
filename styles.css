@@ -390,6 +390,13 @@ nav {
     padding: 1.4rem;
     font-size: 2.4rem;
     font-family: "Sometype Mono", monospace;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav.empty-bg {
+    background: 0;
 }
 
 nav:hover {
