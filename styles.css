@@ -75,6 +75,11 @@ a h2:hover {
     color: var(--dark-grey-hover);
 }
 
+h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
 p {
     text-align: left;
     font-size: 1.8rem;
@@ -273,7 +278,6 @@ body {
     border: 2px solid var(--blue);
     border-radius: 0.5rem;
     background-color: white;
-    color: var(--dark-blue);
     padding: 0.4rem 0.7rem;
     text-align: center;
     text-decoration: none;
@@ -284,7 +288,33 @@ body {
 
 .tag:hover {
     cursor: pointer;
+}
+
+.tag-blue {
+    color: var(--dark-blue);
+    border-color: var(--blue);
+}
+
+.tag-blue:hover {
     border-color: var(--dark-blue);
+}
+
+.tag-green {
+    color: var(--dark-green);
+    border-color: var(--green);
+}
+
+.tag-green:hover {
+    border-color: var(--dark-green);
+}
+
+.tag-pink {
+    color: var(--dark-pink);
+    border-color: var(--pink);
+}
+
+.tag-pink:hover {
+    border-color: var(--dark-pink);
 }
 
 .read-more {
@@ -428,6 +458,18 @@ nav li {
 
 #text-column p {
     margin-top: 1.5rem;
+}
+
+#text-column .tag {
+    border-radius: 0.7rem;
+    margin-left: 0.5rem;
+    margin-top: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.5rem;
+}
+
+#text-column a:first-child .tag {
+    margin-left: 0;
 }
 
 #lightbox {
