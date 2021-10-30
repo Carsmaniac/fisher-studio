@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Michael Fisher, a digital designer and developer who creates valuable experiences through meaningful interactions that bridge the physical and the digital.">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Ideas Worth Vending &ndash; Projects &ndash; fisher.studio</title>
+        <link href="../styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <div id="nav-wrapper">
+                <a href="..">
+                    <h1 aria-label="Fisher Studio">fisher.<span class="text-orange">studio</span>()</h1>
+                </a>
+
+                <ul>
+                    <li><a href="">projects</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+
+                <div class="clear-float"></div>
+            </div> <!-- #nav-wrapper -->
+        </nav>
+
+        <main>
+            <div id="wrapper" class="wider">
+                <div id="image-column">
+                    <div class="vimeo-embed shadow" style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/50801806?h=95dc165465&byline=0&portrait=0"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen title="Video: About Michael Fisher"></iframe>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div> <!-- .vimeo-embed -->
+
+                    <img src="../images/project-placeholder.jpg" alt="Placeholder" class="shadow" onclick="showLightbox(this)">
+
+                    <img src="../images/project-placeholder.jpg" alt="Placeholder" class="shadow" onclick="showLightbox(this)">
+                </div> <!-- #image-column -->
+
+                <div id="text-column">
+                    <h2>Ideas Worth Vending</h2>
+
+                    <p>An interactive online vending machine filled with art, sharing ideas that aim to make the world a bit better.</p>
+
+                    <p>An interactive online vending machine filled with art, sharing ideas that aim to make the world a bit better.</p>
+
+                    <p>An interactive online vending machine filled with art, sharing ideas that aim to make the world a bit better.</p>
+
+                    <h2>Ideas Worth Vending</h2>
+
+                    <p>An interactive online vending machine filled with art, sharing ideas that aim to make the world a bit better.</p>
+                </div> <!-- #text-column -->
+
+                <div class="float-clear"></div>
+
+                <div id="lightbox" onclick="maybeHideLightbox()">
+                    <img src="" alt="Placeholder" id="lightbox-image">
+
+                    <img src="../images/button-close.png" alt="Close" onclick="hideLightbox()" id="button-close">
+
+                    <script src="../scripts/lightbox.js"></script>
+                </div> <!-- #image-lightbox -->
+            </div> <!-- #wrapper -->
+        </main>
+
+        <footer>
+            <ul>
+                <li>Made in Sydney, Australia on Darramurragal Land</li>
+                <li class="divider" aria-hidden="true">|</li>
+                <li>Source code on <a href="https://github.com/Carsmaniac/fisher-studio" target="_blank">GitHub</a></li>
+                <li class="divider" aria-hidden="true">|</li>
+                <li title="Each of you should use whatever gift you have received to serve others, as faithful stewards of God’s grace in its various forms.">1 Peter 4:10</li>
+            </ul>
+        </footer>
+    </body>
+</html>

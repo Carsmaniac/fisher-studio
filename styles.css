@@ -5,7 +5,7 @@
 
 /* Header font: Sometype Mono Medium */
 @font-face {
-  font-family: 'Sometype Mono Med';
+  font-family: 'Sometype Mono';
   font-weight: 500;
   src: url('fonts/sometype-mono-medium.woff2') format('woff2'), url('fonts/sometype-mono-medium.woff') format('woff');
 }
@@ -56,7 +56,7 @@ html {
 }
 
 h1 {
-    font-family: "Sometype Mono Med", monospace;
+    font-family: "Sometype Mono", monospace;
     font-weight: 500;
     font-size: 8rem;
     color: white;
@@ -71,7 +71,7 @@ h2 {
     transition-duration: 0.2s;
 }
 
-h2:hover {
+a h2:hover {
     color: var(--dark-grey-hover);
 }
 
@@ -122,6 +122,49 @@ a {
     overflow: hidden;
 }
 
+body {
+    animation: fade-in-animation ease 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-slow {
+    animation: fade-in-animation ease 0.8s;
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.text-lavender {
+    color: var(--lavender);
+}
+
+.text-grey {
+    color: var(--grey);
+}
+
 
 
 /* Home page */
@@ -141,9 +184,9 @@ a {
 
 .big-buttons button {
     display: inline-block;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
     margin-left: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
     border: 2px solid var(--dark-green);
     border-radius: 5rem;
     background-color: white;
@@ -287,4 +330,131 @@ footer .divider {
     font-size: 1.8rem;
     color: var(--grey);
     margin: 0 3rem;
+}
+
+
+
+/* Project page */
+
+nav {
+    background: var(--dark-grey);
+    height: 6rem;
+    color: white;
+    padding: 1.4rem;
+    font-size: 2.4rem;
+    font-family: "Sometype Mono", monospace;
+}
+
+nav:hover {
+    /* Stops mouse from switching to text selection I-beam in between nav elements */
+    cursor: default;
+}
+
+nav a {
+    transition-duration: 0.2s;
+    transition-property: color;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: var(--grey);
+}
+
+#nav-wrapper {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+nav h1 {
+    font-size: inherit;
+    padding: 0;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+#wrapper.wider {
+    width: 90%;
+    max-width: 1100px;
+}
+
+#image-column {
+    width: 60%;
+    float: left;
+    margin-top: 3rem;
+}
+
+#image-column img {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#image-column img:hover {
+    cursor: pointer;
+}
+
+#image-column .vimeo-embed {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 0;
+}
+
+#text-column {
+    width: 40%;
+    margin-top: 2.7rem;
+    padding-left: 3rem;
+    float: right;
+    text-align: left;
+}
+
+#text-column h2 {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+#text-column h2:first-child {
+    margin-top: 0;
+}
+
+#text-column p {
+    margin-top: 1.5rem;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000DD;
+}
+
+#lightbox-image {
+    margin: 5vh auto 0 auto;
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+#button-close {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    width: 8rem;
+}
+
+#button-close:hover {
+    color: var(--grey);
+    cursor: pointer;
 }

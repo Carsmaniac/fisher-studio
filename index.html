@@ -10,150 +10,165 @@
         <link href="styles.css" rel="stylesheet">
     </head>
 
-    <body>
-        <div id="hero" class="shadow-big"></div>
-        
-        <div id="title-block">
-            <h1>fisher.studio()</h1>
-                <!--
-                Typewriter script that will type out the following, with correct colours:
-                fisher.studio()
-                <div id="fisher-studio">
-                ["fisher", "studio"]
-                return fisher_studio
-                console.log(fisher.studio)
-                var fisherStudio
-                -->
-            <p id="tagline">design and development</p>
-        </div> <!-- #title-block -->
+    <body class="fade-slow">
+        <main>
+            <div id="hero" class="shadow-big"></div>
 
-        <div id="wrapper">
-            <div class="vimeo-embed shadow-big" style="padding:56.25% 0 0 0;position:relative;">
-                <iframe src="https://player.vimeo.com/video/50801806?h=95dc165465&color=9DCC50&byline=0&portrait=0"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen title="Video: About Michael Fisher"></iframe>
-                <script src="https://player.vimeo.com/api/player.js"></script>
-            </div> <!-- .vimeo-embed -->
+            <div id="title-block">
+                <h1 aria-label="Fisher Studio">fisher.<span class="text-orange">studio</span>()</h1>
+                    <!--
+                    Typewriter script that will type out the following, with correct colours:
+                    fisher.studio()
+                    <div id="fisher-studio">
+                    ["fisher", "studio"]
+                    return fisher_studio
+                    console.log(fisher.studio)
+                    var fisherStudio
+                    -->
+                <p id="tagline">design and development</p>
+            </div> <!-- #title-block -->
 
-            <div class="big-buttons">
-                <a href="#">
-                    <button name="About" class="solid">More about me</button>
-                </a>
+            <div id="wrapper">
+                <div class="vimeo-embed shadow-big" style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/50801806?h=95dc165465&byline=0&portrait=0"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen title="Video: About Michael Fisher"></iframe>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div> <!-- .vimeo-embed -->
 
-                <a href="#">
-                    <button name="Contact">Get in touch</button>
-                </a>
-            </div> <!-- .big-buttons -->
-
-            <div class="project-card">
-                <a href="#">
-                    <img src="images/project-placeholder.jpg" alt="Ideas Worth Vending project screenshot">
-                </a>
-
-                <div class="project-info">
-                    <div class="project-title">
-                        <a href="#">
-                            <h2>Ideas Worth Vending</h2>
-                        </a>
-                        <p>An interactive online vending machine filled with art, sharing ideas that aim to make the world a bit better.</p>
-                    </div> <!-- .project-title -->
-
-                    <div class="project-tags">
+                <div class="big-buttons">
                     <a href="#">
-                        <button name="Interaction design" class="tag">Interaction design</button>
+                        <button name="About" class="solid">More about me</button>
                     </a>
+
                     <a href="#">
-                        <button name="JavaScript" class="tag">JavaScript</button>
+                        <button name="Contact">Get in touch</button>
                     </a>
+                </div> <!-- .big-buttons -->
+
+                <div class="project-card">
+                    <a href="projects/ideas-worth-vending.html">
+                        <img src="images/project-placeholder.jpg" alt="Ideas Worth Vending project screenshot">
+                    </a>
+
+                    <div class="project-info">
+                        <div class="project-title">
+                            <a href="projects/ideas-worth-vending.html">
+                                <h2>Ideas Worth Vending</h2>
+                            </a>
+
+                            <p>An interactive online vending machine filled with art, sharing ideas that aim to make the world a bit better.</p>
+                        </div> <!-- .project-title -->
+
+                        <div class="project-tags">
+                            <a href="#">
+                                <button name="Interaction design" class="tag">Interaction design</button>
+                            </a>
+
+                            <a href="#">
+                                <button name="JavaScript" class="tag">JavaScript</button>
+                            </a>
+
+                            <a href="#">
+                                <button name="p5.js" class="tag">p5.js</button>
+                            </a>
+
+                            <div class="float-clear"></div>
+
+                            <a href="projects/ideas-worth-vending.html">
+                                <button name="Read more" class="read-more">Read more</button>
+                            </a>
+                        </div> <!-- .project-tags -->
+                    </div> <!-- .project-info -->
+                </div> <!-- .project-card Ideas Worth Vending -->
+
+                <div class="float-clear"></div>
+
+                <div class="project-card">
+                    <div class="project-info info-left">
+                        <div class="project-title">
+                            <a href="#">
+                                <h2>A Tale of Two Worlds</h2>
+                            </a>
+
+                            <p>An exploration and re-presenting of my local area, informed by Indigenous design methodologies.</p>
+                        </div> <!-- .project-title -->
+
+                        <div class="project-tags">
+                            <a href="#">
+                                <button name="Design research" class="tag">Design research</button>
+                            </a>
+
+                            <a href="#">
+                                <button name="Motion design" class="tag">Motion design</button>
+                            </a>
+
+                            <div class="float-clear"></div>
+
+                            <a href="#">
+                                <button name="Read more" class="read-more">Read more</button>
+                            </a>
+                        </div> <!-- .project-tags -->
+                    </div> <!-- .project-info -->
+
                     <a href="#">
-                        <button name="p5.js" class="tag">p5.js</button>
+                        <img src="images/project-placeholder.jpg" alt="A Tale of Two Worlds project screenshot">
                     </a>
-                    <div class="float-clear"></div>
+                </div> <!-- .project-card A Tale of Two Worlds -->
+
+                <div class="float-clear"></div>
+
+                <div class="project-card">
                     <a href="#">
-                        <button name="Read more" class="read-more">Read more</button>
+                        <img src="images/project-placeholder.jpg" alt="Paintjob Packer project screenshot">
                     </a>
-                    </div> <!-- .project-tags -->
-                </div> <!-- .project-info -->
-            </div> <!-- .project-card Ideas Worth Vending -->
 
-            <div class="float-clear"></div>
+                    <div class="project-info">
+                        <div class="project-title">
+                            <a href="#">
+                                <h2>Paintjob Packer</h2>
+                            </a>
 
-            <div class="project-card">
-                <div class="project-info info-left">
-                    <div class="project-title">
-                        <a href="#">
-                            <h2>A Tale of Two Worlds</h2>
-                        </a>
-                        <p>An exploration and re-presenting of my local area, informed by Indigenous design methodologies.</p>
-                    </div> <!-- .project-title -->
+                            <p>An interactive online vending machine filled with art</p>
+                        </div> <!-- .project-title -->
 
-                    <div class="project-tags">
+                        <div class="project-tags">
+                            <a href="#">
+                                <button name="Software development" class="tag">Software development</button>
+                            </a>
+
+                            <a href="#">
+                                <button name="Python" class="tag">Python</button>
+                            </a>
+
+                            <div class="float-clear"></div>
+
+                            <a href="#">
+                                <button name="Read more" class="read-more">Read more</button>
+                            </a>
+                        </div> <!-- .project-tags -->
+                    </div> <!-- .project-info -->
+                </div> <!-- .project-card Paintjob Packer -->
+
+                <div class="float-clear"></div>
+
+                <div class="big-buttons">
                     <a href="#">
-                        <button name="Design research" class="tag">Design research</button>
+                        <button name="Projects" class="solid">More projects</button>
                     </a>
-                    <a href="#">
-                        <button name="Motion design" class="tag">Motion design</button>
-                    </a>
-                    <div class="float-clear"></div>
-                    <a href="#">
-                        <button name="Read more" class="read-more">Read more</button>
-                    </a>
-                    </div> <!-- .project-tags -->
-                </div> <!-- .project-info -->
+                </div> <!-- .big-buttons -->
+            </div> <!-- #wrapper -->
+        </main>
 
-                <a href="#">
-                    <img src="images/project-placeholder.jpg" alt="A Tale of Two Worlds project screenshot">
-                </a>
-            </div> <!-- .project-card A Tale of Two Worlds -->
-
-            <div class="float-clear"></div>
-
-            <div class="project-card">
-                <a href="#">
-                    <img src="images/project-placeholder.jpg" alt="Paintjob Packer project screenshot">
-                </a>
-
-                <div class="project-info">
-                    <div class="project-title">
-                        <a href="#">
-                            <h2>Paintjob Packer</h2>
-                        </a>
-                        <p>An interactive online vending machine filled with art</p>
-                    </div> <!-- .project-title -->
-
-                    <div class="project-tags">
-                    <a href="#">
-                        <button name="Software development" class="tag">Software development</button>
-                    </a>
-                    <a href="#">
-                        <button name="Python" class="tag">Python</button>
-                    </a>
-                    <div class="float-clear"></div>
-                    <a href="#">
-                        <button name="Read more" class="read-more">Read more</button>
-                    </a>
-                    </div> <!-- .project-tags -->
-                </div> <!-- .project-info -->
-            </div> <!-- .project-card Paintjob Packer -->
-
-            <div class="float-clear"></div>
-
-            <div class="big-buttons">
-                <a href="#">
-                    <button name="Projects" class="solid">More projects</button>
-                </a>
-            </div> <!-- .big-buttons -->
-        </div> <!-- #wrapper -->
+        <footer>
+            <ul>
+                <li>Made in Sydney, Australia on Darramurragal Land</li>
+                <li class="divider" aria-hidden="true">|</li>
+                <li>Source code on <a href="https://github.com/Carsmaniac/fisher-studio" target="_blank">GitHub</a></li>
+                <li class="divider" aria-hidden="true">|</li>
+                <li title="Each of you should use whatever gift you have received to serve others, as faithful stewards of God’s grace in its various forms.">1 Peter 4:10</li>
+            </ul>
+        </footer>
     </body>
-
-    <footer>
-        <ul>
-            <li>Made in Sydney, Australia on Darramurragal Land</li>
-            <li class="divider" aria-hidden="true">|</li>
-            <li>Source code on <a href="https://github.com/Carsmaniac/fisher-studio" target="_blank">GitHub</a></li>
-            <li class="divider" aria-hidden="true">|</li>
-            <li title="Each of you should use whatever gift you have received to serve others, as faithful stewards of God’s grace in its various forms.">1 Peter 4:10</li>
-        </ul>
-    </footer>
 </html>
