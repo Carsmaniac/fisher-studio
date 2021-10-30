@@ -1,0 +1,290 @@
+/* Web fonts */
+
+/* Body font: Montserrat Regular, Regular Italic & Bold */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap');
+
+/* Header font: Sometype Mono Medium */
+@font-face {
+  font-family: 'Sometype Mono Med';
+  font-weight: 500;
+  src: url('fonts/sometype-mono-medium.woff2') format('woff2'), url('fonts/sometype-mono-medium.woff') format('woff');
+}
+
+
+
+/* Global reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Colour variables */
+
+:root {
+    --grey: #C5C5C5;
+    --dark-grey: #272727;
+    --dark-grey-hover: #646464;
+    --pink: #DF7DB2;
+    --dark-pink: #CE3B89;
+    --orange: #FED3A8;
+    --dark-orange: #B75C01;
+    --green: #9DCC50;
+    --dark-green: #5C7F24;
+    --blue: #73BAE7;
+    --dark-blue: #1E7AB3;
+    --lavender: #C7C4E2;
+    --dark-lavender: #726EB9;
+}
+/* Dark colours meet WCAG contrast guidelines when displayed on a white background */
+
+
+
+/* Typography */
+
+html {
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    font-kerning: normal;
+    text-align: center;
+    color: var(--dark-grey);
+}
+
+h1 {
+    font-family: "Sometype Mono Med", monospace;
+    font-weight: 500;
+    font-size: 8rem;
+    color: white;
+    padding-top: 42vh;
+    padding-bottom: 4vh;
+}
+
+h2 {
+    color: var(--dark-grey);
+    font-size: 2.4rem;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+h2:hover {
+    color: var(--dark-grey-hover);
+}
+
+p {
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#tagline {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* General layout */
+
+#wrapper {
+    margin: 0 auto 10rem auto;
+    float: top;
+    width: 80%;
+    max-width: 850px;
+}
+
+.float-clear {
+    clear: both;
+}
+
+.shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-big {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.vimeo-embed {
+    width: 100%;
+    /* Hack to get border-radius to work on iframes in Safari */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+
+
+/* Home page */
+
+#hero {
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    z-index: -1;
+}
+
+#title-block {
+    height: 100vh;
+}
+
+.big-buttons button {
+    display: inline-block;
+    margin-top: 3.5rem;
+    margin-left: 2rem;
+    margin-bottom: 6rem;
+    border: 2px solid var(--dark-green);
+    border-radius: 5rem;
+    background-color: white;
+    color: var(--dark-green);
+    padding: 1.6rem 3.2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    transition-duration: 0.2s;
+    transition-property: background, color;
+}
+
+.big-buttons button:hover {
+    background-color: var(--dark-green);
+    color: white;
+    cursor: pointer;
+}
+
+.big-buttons .solid {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+.big-buttons .solid:hover {
+    background-color: white;
+    color: var(--dark-green);
+}
+
+.big-buttons a:first-child button {
+    margin-left: 0;
+}
+
+.project-card {
+    margin-top: 5rem;
+}
+
+.project-card img {
+    float: left;
+    width: 50%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.project-info {
+    float: left;
+    height: 24rem;
+    width: 50%;
+    text-align: left;
+    position: relative;
+}
+
+.project-title {
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
+    right: 1rem;
+}
+
+.info-left .project-title {
+    left: 1rem;
+    right: 3rem;
+}
+
+.project-title p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+    right: 1rem;
+}
+
+.info-left .project-tags {
+    left: 1rem;
+    right: 3rem;
+}
+
+.tag {
+    margin-left: 0.3rem;
+    margin-top: 0.3rem;
+    border: 2px solid var(--blue);
+    border-radius: 0.5rem;
+    background-color: white;
+    color: var(--dark-blue);
+    padding: 0.4rem 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition-duration: 0.2s;
+    transition-property: border;
+}
+
+.tag:hover {
+    cursor: pointer;
+    border-color: var(--dark-blue);
+}
+
+.read-more {
+    margin-top: 0.8rem;
+    border: 2px solid var(--dark-green);
+    border-radius: 5rem;
+    background-color: white;
+    color: var(--dark-green);
+    font-size: 1.6rem;
+    padding: 0.6rem 1.4rem;
+    text-align: center;
+    transition-duration: 0.2s;
+    transition-property: color, background;
+}
+
+.read-more:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--dark-green);
+}
+
+.project-tags p {
+    margin-top: 1rem;
+}
+
+footer ul {
+    margin: 25rem auto 5rem auto;
+    list-style: none;
+}
+
+footer li {
+    font-size: 1.1rem;
+    color: var(--dark-grey-hover);
+    text-align: center;
+    display: inline-block;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer .divider {
+    font-size: 1.8rem;
+    color: var(--grey);
+    margin: 0 3rem;
+}
