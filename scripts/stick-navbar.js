@@ -5,8 +5,6 @@ const navBar = document.getElementsByTagName("nav")[0]
 
 function doSomething(scrollPos) {
     var vimeoPos = document.getElementsByClassName("vimeo-embed")[0].getBoundingClientRect().top;
-    console.log(vimeoPos);
-    console.log(innerHeight);
     if (vimeoPos < 0) {
         navBar.style.background = "#272727";
         navBar.style.position = "sticky";
