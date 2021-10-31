@@ -5,6 +5,7 @@ function showLightbox(clickedImage) {
 
 function hideLightbox() {
     document.getElementById("lightbox").style.display = "none";
+    document.getElementById("lightbox-image").src = "";
 }
 
 function maybeHideLightbox() {

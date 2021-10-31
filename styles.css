@@ -231,6 +231,11 @@ body {
     width: 50%;
     border-radius: 1.5rem;
     overflow: hidden;
+    transition: opacity 0.2s;
+}
+
+.project-card img:hover {
+    opacity: 90%;
 }
 
 .project-info {
@@ -450,16 +455,23 @@ nav li {
 #image-column img {
     width: 100%;
     margin-bottom: 3rem;
+    box-shadow: none;
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+    border-radius: 1rem;
 }
 
 #image-column img:hover {
     cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-#image-column .vimeo-embed {
+#image-column .video-embed {
     width: 100%;
     margin-bottom: 3rem;
-    border-radius: 0;
+    border-radius: 1rem;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
 }
 
 #text-column {
@@ -482,6 +494,11 @@ nav li {
 
 #text-column p {
     margin-top: 1.5rem;
+    line-height: 1.35;
+}
+
+#text-column p a {
+    text-decoration: underline;
 }
 
 #text-column .tag {
@@ -499,7 +516,7 @@ nav li {
 #lightbox {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100%;
@@ -531,7 +548,7 @@ nav li {
 
 .filtered-project {
     width: 31%;
-    height: 33rem;
+    height: 35rem;
     float: left;
     margin-left: 3.45%;
     margin-top: 3rem;
@@ -548,13 +565,15 @@ nav li {
 
 .filtered-project:hover img {
     opacity: 90%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .filtered-project img {
     width: 100%;
     border-radius: 2rem;
-    transition-property: opacity;
+    transition-property: opacity, box-shadow;
     transition-duration: 0.2s;
+    box-shadow: none;
 }
 
 .filtered-project h3 {
